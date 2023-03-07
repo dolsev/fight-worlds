@@ -11,7 +11,7 @@ const Container = styled.div`
     width:1000px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 0;
     cursor:pointer;
 
 `
@@ -33,7 +33,17 @@ const List = styled.ul`
   list-style: none;
     `
 const ListItem = styled.li`
-
+  animation: slideTop 0.5s ease-in-out;
+}
+  @keyframes slideTop{
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 `
 const Icons = styled.div`
 
@@ -61,10 +71,10 @@ const Navbar = ()=>{
         <Section>
             <Container>
                 <Links>
-                    <Logo>FIGHT WORDS studio</Logo>
+                    <Logo>FW gaming</Logo>
                     <List>
                         <ListItem>Home</ListItem>
-                        <ListItem>Studio</ListItem>
+                        <ListItem>Team</ListItem>
                         <ListItem>Works</ListItem>
                         <ListItem>Contact</ListItem>
                     </List>

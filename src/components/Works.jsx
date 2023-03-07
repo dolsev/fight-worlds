@@ -7,7 +7,7 @@ const Section = styled.div`
   scroll-snap-align: center;
 `
 
-function Works(props) {
+function Works() {
     return (
         <Section>Works</Section>
     );
