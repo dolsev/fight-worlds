@@ -1,10 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from 'styled-components'
 
 const Section = styled.div`
-    display: flex;
-    justify-content: center;
-    color:#58D7CF;
+  display: flex;
+  justify-content: center;
+  color: #58D7CF;
 `
 const Container = styled.div`
   display: flex;
@@ -13,6 +13,7 @@ const Container = styled.div`
     align-items: center;
     padding: 10px 0;
     cursor:pointer;
+  
 
 `
 const Links = styled.div`
@@ -51,10 +52,6 @@ const Icons = styled.div`
   align-items:center;
   gap:20px;
     `
-const Icon = styled.img`
-  height: 16px;
-  
-    `
 const Button = styled.button`
   width: 100px;
   padding: 10px;
@@ -67,21 +64,40 @@ const Button = styled.button`
 `
 
 const Navbar = ()=>{
+    const goToHome = () => {
+        window.location.hash = '#home';
+    };
+
+    const goToTeam = () => {
+        window.location.hash = '#team';
+    };
+
+    const goToWorks = () => {
+        window.location.hash = '#works';
+    };
+
+    const goToContact = () => {
+        window.location.hash = '#contact';
+    };
+
+    const goToRoadmap = () => {
+        window.location.hash = '#roadmap';
+    };
     return (
         <Section>
             <Container>
                 <Links>
-                    <Logo>FW gaming</Logo>
+                    <Logo onClick={goToHome}>FW gaming</Logo>
                     <List>
-                        <ListItem>Home</ListItem>
-                        <ListItem>Team</ListItem>
-                        <ListItem>Works</ListItem>
-                        <ListItem>Contact</ListItem>
+                        <ListItem onClick={goToHome}>Home</ListItem>
+                        <ListItem onClick={goToTeam}>Team</ListItem>
+                        <ListItem onClick={goToWorks}>Works</ListItem>
+                        <ListItem onClick={goToRoadmap}>Roadmap</ListItem>
+                        <ListItem onClick={goToContact}>Contact</ListItem>
                     </List>
                 </Links>
                 <Icons>
-                    <Icon src="./img/search.png" />
-                    <Button>Hire Now</Button>
+                    <Button onClick={goToContact}>Hire Now</Button>
                 </Icons>
             </Container>
         </Section>

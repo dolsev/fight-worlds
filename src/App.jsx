@@ -3,6 +3,8 @@ import Hero from "./components/Hero.jsx";
 import Works from "./components/Works.jsx";
 import Contact from './components/Contact.jsx'
 import Team from "./components/Team.jsx";
+import Roadmap from "./components/Roadmap.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 
 const Container = styled.div`
@@ -23,6 +25,7 @@ function App() {
         <Hero/>
         <Team/>
         <Works/>
+        <Roadmap/>
         <Contact/>
     </Container>
   )

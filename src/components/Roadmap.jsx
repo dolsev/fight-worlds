@@ -5,7 +5,7 @@ import Navbar from "./Navbar.jsx";
 const Section = styled.div`
   display: flex;
   height: 100vh;
-  background-image: url("/img/main-bg.png");
+  background-image: url("/img/game-bg1.png");
   background-size: cover;
   color: white;
   scroll-snap-align: center;
@@ -15,7 +15,6 @@ const Section = styled.div`
 `
 const Wrapper = styled.div`
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     width: 1500px;
     margin:5% 0;
@@ -59,7 +58,7 @@ const About = styled.div`
 `;
 
 const H1 = styled.h1`
-  color:#58D7CF;
+  color: #CC844D;
   font-weight: 900;
   letter-spacing: 2px;
 
@@ -70,31 +69,6 @@ const H2 = styled.h2`
 const H3 = styled.h3`
   color:white;
 
-`
-
-const Button = styled.button`
-  width: 200px;
-  padding: 10px 5px;
-  background-color: #30fcec;
-  font-weight: 800;
-  cursor: pointer;
-
-  :hover {
-    background-color: #ffffff;
-  }
-`;
-const Continue = styled.button`
-  width: 200px;
-  padding: 10px 5px;
-  background-color: white;
-  font-weight: 800;
-  cursor:pointer;
-  :hover {
-    background-color: #30fcec;
-  }
-`;
-
-const Buttons = styled.div`
 `
 const Description = styled.div`
   display: flex;
@@ -108,30 +82,16 @@ function Hero() {
         const teamSection = document.querySelector('#team');
         teamSection.scrollIntoView({ behavior: 'smooth' });
     };
-    const goToContact = () => {
-        window.location.hash = '#contact';
-    };
-
     return (
-        <Section id='hero'>
-            <Navbar/>
+        <Section id='roadmap'>
             <Wrapper>
                 <About>
-                    <H2>We are</H2>
-                    <H1>Fight Worlds Gaming</H1>
+                    <H1>Roadmap:</H1>
                     <Description>
-                    <H3>And we are making Causal Sci-Fi games on Unity/Unreal for 12+ gamers targeting 21+ audiences.
-                    </H3>
-                    <H3>Currently we are developing MMORPG Casual Tower-Defence game called 'Fight Worlds'.
-                    </H3>
-                    <H3> We understand the importance of balancing gameplay mechanics, level design, and visual elements to deliver a
-                        game that is both challenging and fun.
-                    </H3>
+                        <H3>To be added soon.
+                        </H3>
+
                     </Description>
-                    <Buttons>
-                    <Button onClick={goToContact}>Contact Us</Button>
-                    <Continue onClick={scrollDown}>Read more</Continue>
-                    </Buttons>
                 </About>
             </Wrapper>
         </Section>
