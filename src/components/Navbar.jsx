@@ -23,22 +23,29 @@ const Links = styled.div`
   display: flex;
   align-items:center;
   gap:50px;
+  @media screen and (max-width: 450px){
+    gap:5px;
+  }
     `
 const Logo = styled.div`
   letter-spacing: 3px;
   font-weight: 900;
   font-size:24px;
   color:white;
-  @media screen and (max-width: 728px){
-  display: none;
-  }
+  
 `
 const List = styled.ul`
   display: flex;
   gap:20px;
   list-style: none;
+  @media screen and (max-width: 450px){
+    gap:5px;
+  }
     `
 const ListItem = styled.li`
+  :hover{
+    color:white;
+  }
   animation: slideTop 0.5s ease-in-out;
 }
   @keyframes slideTop{
@@ -77,7 +84,7 @@ const Navbar = ()=>{
         <Section>
             <Container>
                 <Links>
-                    <Logo onClick={goToHome}>/FW gaming</Logo>
+                    <Logo onClick={goToHome}>/FW</Logo>
                     <List>
                         <ListItem onClick={goToTeam}>Team</ListItem>
                         <ListItem onClick={goToWorks}>Works</ListItem>
