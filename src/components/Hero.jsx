@@ -32,9 +32,9 @@ const About = styled.div`
   width: 500px;
   gap: 60px;
   align-items: center;
-  margin-bottom:10%;
+  margin-bottom: 10%;
   animation: slideIn 0.5s ease-in-out;
-  @keyframes slideIn{
+  @keyframes slideIn {
     from {
       opacity: 0;
       transform: translateX(50%);
@@ -48,14 +48,14 @@ const About = styled.div`
   @media screen and (max-width: 1500px) {
     width: 768px;
     backdrop-filter: blur(5px);
-    background-color: rgba(54, 45, 45, 0.4)
+    background-color: rgba(9, 5, 5, 0.5);
+    padding: 15px;
+    border-radius: 5%;
 
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 355px;
-    gap:20px;
-  }
+    @media screen and (max-width: 768px) {
+      width: 355px;
+      gap: 20px;
+    }
 `;
 
 const H1 = styled.h1`

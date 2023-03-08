@@ -19,6 +19,7 @@ const Wrapper = styled.div`
     margin:5% 5%;
   flex-wrap: wrap;
   width: 1400px;
+  
 @media screen and (max-width:768px){
   width: auto;
 
@@ -31,9 +32,11 @@ const About = styled.div`
   width: 500px;
   gap: 60px;
   align-items: center;
-  margin-bottom:10%;
   flex:1;
   flex-wrap: wrap;
+  backdrop-filter: blur(5px);
+  background-color: rgba(9, 5, 5, 0.1);
+  padding:20px;
 
   @media screen and (max-width: 768px) {
     gap:20px;
@@ -45,6 +48,7 @@ const About = styled.div`
 const Iframe = styled.iframe`
   width: 460px;
   height:259px;
+  border:none;
   @media screen and (max-width: 768px) {
     width: 320px;
     gap:20px;

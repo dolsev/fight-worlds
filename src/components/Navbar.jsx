@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from 'styled-components'
 
 const Section = styled.div`
@@ -13,7 +13,10 @@ const Container = styled.div`
     align-items: center;
     padding: 10px 0;
     cursor:pointer;
-  
+  @media screen and (max-width: 1000px){
+    width: 100%;
+    gap:5px;
+  }
 
 `
 const Links = styled.div`
@@ -26,7 +29,9 @@ const Logo = styled.div`
   font-weight: 900;
   font-size:24px;
   color:white;
-  
+  @media screen and (max-width: 728px){
+  display: none;
+  }
 `
 const List = styled.ul`
   display: flex;
@@ -46,22 +51,7 @@ const ListItem = styled.li`
       transform: translateY(0);
     }
 `
-const Icons = styled.div`
 
-  display: flex;
-  align-items:center;
-  gap:20px;
-    `
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #30fcec;
-  font-weight: 800;
-  border: none;
-  color: black;
-  border-radius: 10%;
-  cursor:pointer;
-`
 
 const Navbar = ()=>{
     const goToHome = () => {
@@ -87,18 +77,14 @@ const Navbar = ()=>{
         <Section>
             <Container>
                 <Links>
-                    <Logo onClick={goToHome}>FW gaming</Logo>
+                    <Logo onClick={goToHome}>/FW gaming</Logo>
                     <List>
-                        <ListItem onClick={goToHome}>Home</ListItem>
                         <ListItem onClick={goToTeam}>Team</ListItem>
                         <ListItem onClick={goToWorks}>Works</ListItem>
                         <ListItem onClick={goToRoadmap}>Roadmap</ListItem>
                         <ListItem onClick={goToContact}>Contact</ListItem>
                     </List>
                 </Links>
-                <Icons>
-                    <Button onClick={goToContact}>Hire Now</Button>
-                </Icons>
             </Container>
         </Section>
     );
