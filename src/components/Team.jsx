@@ -97,7 +97,7 @@ color: #30fcec;
     font-size: 1em;
   }
   @media screen and (max-width: 576px) {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 `;
 const H3 = styled.h3`
@@ -106,7 +106,7 @@ const H3 = styled.h3`
     font-size: 0.9em;
   }
   @media screen and (max-width: 576px) {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
 `
@@ -116,7 +116,7 @@ const P = styled.p`
     font-size: 0.8em;
   }
   @media screen and (max-width: 576px) {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   
 
