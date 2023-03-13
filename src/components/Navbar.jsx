@@ -88,7 +88,7 @@ const Navbar = ()=>{
                     <List>
                         <ListItem onClick={goToTeam}>Team</ListItem>
                         <ListItem onClick={goToWorks}>Works</ListItem>
-                        <ListItem onClick={goToRoadmap}>Roadmap</ListItem>
+                        {/* <ListItem onClick={goToRoadmap}>Roadmap</ListItem> */}
                         <ListItem onClick={goToContact}>Contact</ListItem>
                     </List>
                 </Links>

@@ -24,7 +24,7 @@ function App() {
         <Hero/>
         <Team/>
         <Works/>
-        <Roadmap/>
+        {/* <Roadmap/> */}
         <Contact/>
     </Container>
   )

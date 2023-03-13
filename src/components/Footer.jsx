@@ -73,7 +73,7 @@ const Footer = ()=>{
                         <ListItem onClick={goToHome}>Home</ListItem>
                         <ListItem onClick={goToTeam}>Team</ListItem>
                         <ListItem onClick={goToWorks}>Works</ListItem>
-                        <ListItem onClick={goToRoadmap}>Roadmap</ListItem>
+                        {/*<ListItem onClick={goToRoadmap}>Roadmap</ListItem>*/}
                     </List>
                     <ListItem style={{fontWeight:800}} onClick={goToHome}>FW Gaming</ListItem>
                     <ListItem onClick={handleLinksClick}>©2023 Vladislav Smirnov</ListItem>
