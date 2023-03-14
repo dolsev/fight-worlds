@@ -21,8 +21,11 @@ const Wrapper = styled.div`
     margin:5% 0;
   
   @media screen and (max-width: 1500px) {
-    width: 768px;
+    width: 100%;
     justify-content: center;
+    margin:5% 0;
+  }
+  @media screen and (max-width: 76px) {
   }
 `
 const About = styled.div`
@@ -47,13 +50,11 @@ const About = styled.div`
 
   @media screen and (max-width: 1500px) {
     width: 768px;
-    backdrop-filter: blur(5px);
-    background-color: rgba(9, 5, 5, 0.5);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px;
-    border-radius: 5%;
 
     @media screen and (max-width: 768px) {
-      width: 355px;
       gap: 20px;
     }
 `;

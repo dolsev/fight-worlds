@@ -7,15 +7,15 @@ const Section = styled.div`
   background-color: #090C11;
   color: white;
   scroll-snap-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  gap:150px;
+  justify-content: flex-end;
 `
 const Container = styled.div`
-  width: 100%;
-  height: 90%;
   display: flex;
   justify-content: space-between;
   gap:50px;
-
 `
 const Left = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ const Form = styled.form`
   flex-direction: column;
   gap:25px;
   @media screen and (max-width: 600px){
-    width: auto;
+    width: 100%;
   }
 `
 const Input = styled.input`

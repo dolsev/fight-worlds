@@ -6,30 +6,23 @@ const Section = styled.div`
   justify-content: center;
   color: #000000;
   background-color: white;
-  
+  margin-bottom: 0;
+  padding: 10px;
 `
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0 50px;
   cursor:pointer;
   margin-bottom: 0;
   gap:15px;
-  @media screen and (max-width: 600px){
-    padding: 10px;
-    width:300px; 
-  }
 `
 const Links = styled.div`
   display: flex;
   align-items:center;
   flex-direction: column;
   gap:2px;
-  @media screen and (max-width: 600px){
-    gap:1px;
-  
-  }
+  padding-bottom: 100px;
 `
 const List = styled.ul`
   display: flex;

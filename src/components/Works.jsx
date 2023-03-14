@@ -12,7 +12,9 @@ const Section = styled.div`
   scroll-snap-align: center;
   flex-direction: column;
   align-items:center;
-
+@media screen and (max-width: 768px){
+  justify-content: center;
+}
 `
 const Wrapper = styled.div`
     display: flex;
@@ -34,8 +36,6 @@ const About = styled.div`
   align-items: center;
   flex:1;
   flex-wrap: wrap;
-  backdrop-filter: blur(5px);
-  background-color: rgba(9, 5, 5, 0.1);
   padding:20px;
 
   @media screen and (max-width: 768px) {

@@ -9,32 +9,27 @@ const Section = styled.div`
   scroll-snap-align: center;
   flex-direction: column;
   align-items:center;
-
+  justify-content: space-evenly;
 `
 
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 1500px;
-    margin:5% 10% 5% 5%;
     gap:10px;
-  
-  @media screen and (max-width: 1500px) {
-    width: 768px;
-    justify-content: center;
-    margin:0 0 0 5%;
+  margin-left: 100px;
+  @media screen and (max-width: 768px){
+    margin-left: 0;
   }
+  
 `
 const About = styled.div`
   display: flex;
   flex-direction: column;
-  width: 800px;
   gap:35px;
   margin-bottom:10%;
   justify-content: center;
   animation: slideIn 0.5s ease-in-out;
-  align-items: center;
   @keyframes slideIn{
     from {
       opacity: 0;
@@ -46,86 +41,60 @@ const About = styled.div`
     }
   }
 
-  @media screen and (max-width: 1500px) {
-    width: 768px;
+  @media screen and (max-width: 1400px) {
     gap:20px;
+    padding:10px;
   }
 
   @media screen and (max-width: 768px) {
-    width: 80%;
     gap:10px;
-    margin:10% 10%;
 
   }
 `
 const Portfolio = styled.div`
-    display: flex;
-    gap:10px;
-    backdrop-filter: blur(3px);
-    background-color: rgba(54, 45, 45, 0.1);
-    @media screen and (max-width: 768px) {
-  width: 400px;
-}
-  @media screen and (max-width: 576px) {
-    width: 365px;
-
-  }
+  display: flex;
+  gap: 10px;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
 `
 const Photo = styled.img`
   object-fit: cover;
   height: 150px;
   width: 150px;
-  @media screen and (max-width: 768px) {
-    height: 80px;
-    width: 150px;
 
-  }
 `;
 
 const H1 = styled.h1`
   color: #CC844D;
-  @media screen and (max-width: 768px) {
-    font-size: 1em;
-  }
-  @media screen and (max-width: 576px) {
-    font-size: 0.8em;
+  @media screen and (max-width: 420px){
+    font-size: 15px;
   }
 `;
 const H2 = styled.h2`
 color: #30fcec;
-  @media screen and (max-width: 768px) {
-    font-size: 1em;
-  }
-  @media screen and (max-width: 576px) {
-    font-size: 1em;
+  @media screen and (max-width: 420px){
+    font-size: 14px;
   }
 `;
 const H3 = styled.h3`
   color: #CC844D;
-  @media screen and (max-width: 768px) {
-    font-size: 0.9em;
+  @media screen and (max-width: 420px){
+    font-size: 13px;
   }
-  @media screen and (max-width: 576px) {
-    font-size: 0.9em;
-  }
-
 `
 const P = styled.p`
   color:white;
-  @media screen and (max-width: 768px) {
-    font-size: 0.8em;
+  @media screen and (max-width: 500px){
+    font-size: 12px;
   }
-  @media screen and (max-width: 576px) {
-    font-size: 0.8em;
-  }
-  
 
 `
 const Description = styled.div`
   display: flex;
   flex-direction:column;
   gap:10px;
-
+  
 `
 
 
