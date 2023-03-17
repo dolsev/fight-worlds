@@ -7,7 +7,6 @@ const Section = styled.div`
   color: #000000;
   background-color: white;
   margin-bottom: 0;
-  padding: 10px;
 `
 const Container = styled.div`
   display: flex;
@@ -22,7 +21,7 @@ const Links = styled.div`
   align-items:center;
   flex-direction: column;
   gap:2px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 `
 const List = styled.ul`
   display: flex;
