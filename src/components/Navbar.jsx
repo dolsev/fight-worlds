@@ -5,44 +5,67 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   color: #58D7CF;
+  width: 1000%;
+
 `
 const Container = styled.div`
+  width: 1000px;
   display: flex;
-    width:1000px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    cursor:pointer;
-  @media screen and (max-width: 1000px){
+  align-items: center;
+  cursor: pointer;
+  background-color: #0c0b0b;
+  border-bottom-left-radius:100px;
+  border-bottom-right-radius:100px;
+  border:5px solid #58D7CF;
+  border-top:none;
+  @media screen and (max-width: 1000px) {
+    height:140px;
     width: 100%;
-    gap:5px;
+    gap: 10px;
   }
-
 `
 const Links = styled.div`
   display: flex;
   align-items:center;
-  gap:50px;
-  @media screen and (max-width: 450px){
-    gap:5px;
+  justify-content: space-around;
+  width: 100%;
+  gap:20px;
+  @media screen and (max-width: 1000px){
+    gap:15px;
+    flex-direction: column;
+
   }
     `
-const Logo = styled.div`
-  letter-spacing: 3px;
+const LogoWrapper = styled.div`
+display: flex;
+  align-items: center;
+  gap:10px;
+`
+const LogoText = styled.h1`
+ color:white;
+  font-size: 1.2em;
   font-weight: 900;
-  font-size:24px;
-  color:white;
-  
+  letter-spacing: 3px;
+
+`
+const Logo = styled.img`
+ height: 96px;
+  @media screen and (max-width: 900px){
+    height: 48px;
+  }
 `
 const List = styled.ul`
   display: flex;
-  gap:20px;
   list-style: none;
-  @media screen and (max-width: 450px){
-    gap:5px;
+  gap:20px;
+  @media screen and (max-width: 400px){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
   }
     `
 const ListItem = styled.li`
+  font-size:20px;
   :hover{
     color:white;
   }
@@ -84,12 +107,15 @@ const Navbar = ()=>{
         <Section>
             <Container>
                 <Links>
-                    <Logo onClick={goToHome}>/FW</Logo>
+                        <LogoWrapper>
+                            <Logo onClick={goToHome} src='./img/fw-logo.png'></Logo>
+                            <LogoText>Fight Worlds</LogoText>
+                        </LogoWrapper>
                     <List>
                         <ListItem onClick={goToTeam}>Team</ListItem>
                         <ListItem onClick={goToWorks}>Works</ListItem>
-                        {/* <ListItem onClick={goToRoadmap}>Roadmap</ListItem> */}
-                        <ListItem onClick={goToContact}>Contact</ListItem>
+                         <ListItem onClick={goToRoadmap}>Roadmap</ListItem>
+                        <ListItem onClick={goToContact}>Contact/Career</ListItem>
                     </List>
                 </Links>
             </Container>

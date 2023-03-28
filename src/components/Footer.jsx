@@ -5,7 +5,7 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   color: #000000;
-  background-color: white;
+  background-color: #fff5f5;
   margin-bottom: 0;
 `
 const Container = styled.div`
@@ -30,8 +30,9 @@ const List = styled.ul`
 `
 const ListItem = styled.li`
   list-style: none;
-  :hover{
-    font-weight: 900;
+
+  :hover {
+    color: #1bc9ac;
   }
 
 `
@@ -65,7 +66,7 @@ const Footer = ()=>{
                         <ListItem onClick={goToHome}>Home</ListItem>
                         <ListItem onClick={goToTeam}>Team</ListItem>
                         <ListItem onClick={goToWorks}>Works</ListItem>
-                        {/*<ListItem onClick={goToRoadmap}>Roadmap</ListItem>*/}
+                        <ListItem onClick={goToRoadmap}>Roadmap</ListItem>
                     </List>
                     <ListItem style={{fontWeight:800}} onClick={goToHome}>FW Gaming</ListItem>
                     <ListItem onClick={handleLinksClick}>©2023 Vladislav Smirnov</ListItem>
